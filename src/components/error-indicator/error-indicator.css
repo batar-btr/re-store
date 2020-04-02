@@ -1,0 +1,28 @@
+.Error-indicator {
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--middle);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Error-indicator img {
+    pointer-events: none;
+    animation: Error-logo-spin infinite 20s linear;
+    max-height: 30vmin;
+    padding: 10vmin;
+}
+.Error-indicator p {
+    padding: 10px;
+}
+
+@keyframes Error-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
